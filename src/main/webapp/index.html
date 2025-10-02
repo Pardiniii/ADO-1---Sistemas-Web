@@ -1,12 +1,22 @@
-<html>
-    <body>
-        <form action="/create-car" method="get">
-            <h2>Create your car</h2>
-            <label>Car Name</label>
-            <input type="text" name="car-name" id="car-name">
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Create Car</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+        form { display: flex; gap: 8px; align-items: center; }
+        label { min-width: 90px; }
+    </style>
+</head>
+<body>
+<h2>Create Car</h2>
 
-            <button type="submit">Create car</button>
-        </form>
 
-    </body>
+<form action="/create-car" method="post">
+    <label for="car-name">Car name</label>
+    <input type="text" name="car-name" id="car-name" required/>
+    <button type="submit">Register</button>
+</form>
+</body>
 </html>
